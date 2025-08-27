@@ -1,12 +1,13 @@
 //server.js
 //connection to the api (creating server)
+const password= require('./secret')
 const express = require('express');
 const app=express();
 app.use(express.json());//to parse json request body
 const port=5555;
 //mongoDb
 const {MongoClient, ObjectId}=require('mongodb');
-const uri = "mongodb+srv://itaysegev:RQP8pfWzh7NHSR2G@cluster0.sh1plvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = `mongodb+srv://itaysegev:${password}@cluster0.sh1plvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const client=new MongoClient(uri);
 const validator = require('validator');
 
