@@ -1,3 +1,4 @@
+//server.js
 //connection to the api (creating server)
 const express = require('express');
 const app=express();
@@ -24,7 +25,7 @@ function disconnectToMongoClient(db) {
 }
 
 
-app.listen(port,()=>{console.log("server listening on port:",port)})
+app.listen(port,'0.0.0.0',()=>{console.log("server listening on port:",port)})
 
 app.get("/posts",async (req,res)=>{
     try {

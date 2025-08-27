@@ -1,10 +1,21 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "newapp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0",
+    "mongoos": "^0.0.1-security",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
